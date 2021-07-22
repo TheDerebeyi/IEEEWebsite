@@ -7,6 +7,35 @@ h2
     font-size: 3rem;
 }
 
+.margin-bottom25{
+    margin-bottom: 25px;
+}
+
+.margin-bottom50{
+    margin-bottom: 50px;
+}
+
+.margin-bottom75{
+    margin-bottom: 75px;
+}
+
+.padding-bottom10{
+    padding-bottom: 10px;
+}
+
+.div-underline{
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.text18{
+    font-size: 18pt;
+}
+
 header
 {
     height: 40rem;
@@ -25,7 +54,10 @@ header
 
 section
 {
-    min-height: 40rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /*min-height: 40rem;*/
+    height: fit-content;
 }
 
 
@@ -41,3 +73,7 @@ hr.solid {
     font-size: 100px;
     color: black;
   }
+
+  a{
+    text-decoration: none;
+}
