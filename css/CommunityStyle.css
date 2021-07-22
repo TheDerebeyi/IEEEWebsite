@@ -1,0 +1,18 @@
+.bg {
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+  
+    height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#about {
+    background-image:url("../assets/fire.png");  
+    height: 100%;
+  
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
