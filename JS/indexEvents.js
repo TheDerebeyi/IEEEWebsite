@@ -4,8 +4,6 @@ async function foo() {
 
     var obj = await source.json();
 
-    alert(data[0].id);
-
     var arr = [];
 
     var counter = 0;
