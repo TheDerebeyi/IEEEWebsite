@@ -57,7 +57,7 @@ async function foo() {
     for (let i = 1; i <= arr.length && i <= 3; i++) {
         document.getElementById("events-table" + i).style.visibility = "visible";
         document.getElementById("events-table" + i + "-header").innerHTML = obj[arr[i - 1]].title;
-        document.getElementById("events-table" + i + "-date").innerHTML = date(obj[arr[i - 1]].date);
+        document.getElementById("events-table" + i + "-date").innerHTML = await date(obj[arr[i - 1]].date);
         document.getElementById("events-table" + i + "-desc").innerHTML = obj[arr[i - 1]].description;
     }
 }
