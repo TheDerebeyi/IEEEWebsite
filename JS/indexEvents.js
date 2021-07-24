@@ -57,59 +57,56 @@ async function foo() {
     for (let i = 1; i <= arr.length && i <= 3; i++) {
         document.getElementById("events-table" + i).style.visibility = "visible";
         document.getElementById("events-table" + i + "-header").innerHTML = obj[arr[i - 1]].title;
-        document.getElementById("events-table" + i + "-date").innerHTML = await date(obj[arr[i - 1]].date);
+
+        let date = new Date(obj[arr[i - 1]].date);
+       
+        let tmp;
+        let month;
+    
+        switch (date.getMonth) {
+            case 0:
+                month = "Ocak";
+                break;
+            case 1:
+                month = "Şubat";
+                break;
+            case 2:
+                month = "Mart";
+                break;
+            case 3:
+                month = "Nisan";
+                break;
+            case 4:
+                month = "Mayıs";
+                break;
+            case 5:
+                month = "Haziran";
+                break;
+            case 6:
+                month = "Temmuz";
+                break;
+            case 7:
+                month = "Ağustos";
+                break;
+            case 8:
+                month = "Eylül";
+                break;
+            case 9:
+                month = "Ekim";
+                break;
+            case 10:
+                month = "Kasım";
+                break;
+            case 11:
+                month = "Aralık";
+                break;
+        }
+    
+        tmp = date.getUTCDate + month + date.getUTCFullYear;
+
+        document.getElementById("events-table" + i + "-date").innerHTML = tmp;
         document.getElementById("events-table" + i + "-desc").innerHTML = obj[arr[i - 1]].description;
     }
-}
-
-function date(inputDate) {
-    let date = new Date(inputDate);
-    let tmp;
-    let month;
-
-    switch (date.getMonth) {
-        case 0:
-            month = "Ocak";
-            break;
-        case 1:
-            month = "Şubat";
-            break;
-        case 2:
-            month = "Mart";
-            break;
-        case 3:
-            month = "Nisan";
-            break;
-        case 4:
-            month = "Mayıs";
-            break;
-        case 5:
-            month = "Haziran";
-            break;
-        case 6:
-            month = "Temmuz";
-            break;
-        case 7:
-            month = "Ağustos";
-            break;
-        case 8:
-            month = "Eylül";
-            break;
-        case 9:
-            month = "Ekim";
-            break;
-        case 10:
-            month = "Kasım";
-            break;
-        case 11:
-            month = "Aralık";
-            break;
-    }
-
-    tmp = date.getUTCDate + month + date.getUTCFullYear;
-
-    alert(tmp);
-    return tmp;
 }
 
 foo();
