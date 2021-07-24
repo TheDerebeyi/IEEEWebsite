@@ -1,16 +1,18 @@
 [
     {
-        "id":"1",
-        "title":"Mentör Buluşmaları",
-        "discription":"Bu etkinlik klüb üyelerimiz ile...",
+        "id": "1",
+        "title": "Mentör Buluşmaları",
+        "description": "Bu etkinlik klüb üyelerimiz ile...",
         "image": "../assets/projects/r.jpg",
-        "date":"2021-11-17T03:24:00"
+        "date": "2020-11-17T03:24:00",
+        "tag": "general"
     },
     {
-        "id":"2",
-        "title":"Elektronik Günleri",
-        "discription":"Bu etkinlik klüb üyelerimiz ile...",
+        "id": "2",
+        "title": "Elektronik Günleri",
+        "description": "Bu etkinlik klüb üyelerimiz ile...",
         "image": "../assets/projects/r.jpg",
-        "date":"2021-12-17T03:24:00"
+        "date": "2023-12-17T03:24:00",
+        "tag": "cs"
     }
 ]

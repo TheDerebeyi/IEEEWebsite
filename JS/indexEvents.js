@@ -1,20 +1,4 @@
-var obj = [
-    {
-        "id": "1",
-        "title": "Mentör Buluşmaları",
-        "discription": "Bu etkinlik klüb üyelerimiz ile...",
-        "image": "../assets/projects/r.jpg",
-        "date": "2020-11-17T03:24:00"
-    },
-    {
-        "id": "2",
-        "title": "Elektronik Günleri",
-        "discription": "Bu etkinlik klüb üyelerimiz ile...",
-        "image": "../assets/projects/r.jpg",
-        "date": "2021-12-17T03:24:00"
-    }
-];
-
+var obj = fetch("../Datas/Activities/2021.json").then(response => response.json());
 
 var arr = [];
 
@@ -24,47 +8,51 @@ for (let i = 0; i < obj.length; i++) {
     let date1 = new Date(obj[i].date);
     let date2 = new Date();
 
-    let gün;
-    let saat;
-    let dakika;
-    if (date1.getUTCFullYear - date2.getUTCFullYear > 0) {
-        arr[counter] = obj[i];
+    if (date1.getUTCFullYear() - date2.getUTCFullYear() > 0) {
+        arr[counter] = i;
         counter++;
     }
-    else if(date1.getUTCFullYear - date2.getUTCFullYear == 0){
-        if (date1.getUTCMonth - date2. getUTCMonth > 0){
-            arr[counter] = obj[i];
+    else if (date1.getUTCFullYear() - date2.getUTCFullYear() == 0) {
+        if (date1.getUTCMonth() - date2.getUTCMonth() > 0) {
+            arr[counter] = i;
             counter++;
         }
-        else if (date1.getUTCMonth - date2. getUTCMont == 0){
-            if(date1.getUTCMonth - date2. getUTCMonth > 0){
-
+        else if (date1.getUTCMonth() - date2.getUTCMont == 0) {
+            if (date1.getUTCMonth() - date2.getUTCMonth() > 0) {
+                arr[counter] = i;
+                counter++;
             }
-
-            else if(date1.getUTCMonth - date2. getUTCMonth == 0){
-                if (date1.getUTCDay - date2. getUTCDay > 0 ){}
-                else if(date1.getUTCDay - date2. getUTCDay == 0){
-                    
+            else if (date1.getUTCMonth() - date2.getUTCMonth() == 0) {
+                if (date1.getUTCDay() - date2.getUTCDay() > 0) {
+                    arr[counter] = i;
+                    counter++;
+                }
+                else if (date1.getUTCDay() - date2.getUTCDay() == 0) {
+                    if (date1.getUTCHours() - date2.getUTCHours() > 0) {
+                        arr[counter] = i;
+                        counter++;
+                    }
+                    else if (date1.getUTCHours() - date2.getUTCHours() == 0) {
+                        if (date1.getUTCMinutes() - date2.getUTCMinutes() > 0) {
+                            arr[counter] = i;
+                            counter++;
+                        }
+                        else if (date1.getUTCMinutes() - date2.getUTCMinutes() == 0) {
+                            if (date1.getUTCSeconds() - date2.getUTCSeconds() > 0) {
+                                arr[counter] = i;
+                                counter++;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-alert(obj[1].id);
-
-/*        gün = date1.getUTCDate() - date2.getUTCDate();
-        if (date1.getUTCHours() - date2.getUTCHours() >= 0) {
-            saat = date1.getUTCHours() - date2.getUTCHours()
-        }
-        else {
-            gün -= 1;
-            saat = date1.getUTCHours() - date2.getUTCHours() + 24;
-        }
-        if (date1.getUTCMinutes() - date2.getUTCMinutes() >= 0) {
-            dakika = date1.getUTCMinutes() - date2.getUTCMinutes();
-        }
-        else {
-            dakika = date1.getUTCMinutes() - date2.getUTCMinutes() + 60;
-            saat -= 1;
-        }*/
+for(let i = 1; i <= arr.length && i <= 3; i++){
+    document.getElementById("events-table" + i).style.visibility = "visible";
+    document.getElementById("events-table" + i + "-header").innerHTML = obj[arr[i-1]].title;
+    document.getElementById("events-table" + i + "-date").innerHTML = obj[arr[i-1]].date;
+    document.getElementById("events-table" + i + "-desc").innerHTML = obj[arr[i-1]].description;
+}
