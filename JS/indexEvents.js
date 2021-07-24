@@ -21,7 +21,7 @@ async function foo() {
                 arr[counter] = i;
                 counter++;
             }
-            else if (date1.getUTCMonth() - date2.getUTCMont == 0) {
+            else if (date1.getUTCMonth() - date2.getUTCMonth() == 0) {
                 if (date1.getUTCMonth() - date2.getUTCMonth() > 0) {
                     arr[counter] = i;
                     counter++;
@@ -63,7 +63,7 @@ async function foo() {
         let tmp;
         let month;
     
-        switch (date.getMonth) {
+        switch (date.getMonth()) {
             case 0:
                 month = "Ocak";
                 break;
@@ -102,7 +102,7 @@ async function foo() {
                 break;
         }
     
-        tmp = date.getUTCDate + month + date.getUTCFullYear;
+        tmp = date.getDate() + " " + month +" "+ date.getFullYear();
 
         document.getElementById("events-table" + i + "-date").innerHTML = tmp;
         document.getElementById("events-table" + i + "-desc").innerHTML = obj[arr[i - 1]].description;

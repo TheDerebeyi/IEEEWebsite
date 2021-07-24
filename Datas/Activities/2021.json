@@ -4,7 +4,7 @@
         "title": "Mentör Buluşmaları",
         "description": "Bu etkinlik klüb üyelerimiz ile...",
         "image": "../assets/projects/r.jpg",
-        "date": "2020-11-17T03:24:00 UTC+3",
+        "date": "2020-11-17T03:24:00",
         "tag": "general"
     },
     {
@@ -12,7 +12,7 @@
         "title": "Elektronik Günleri",
         "description": "Bu etkinlik klüb üyelerimiz ile...",
         "image": "../assets/projects/r.jpg",
-        "date": "2023-12-17T03:24:00 UTC+3",
+        "date": "2023-12-17T03:24:00",
         "tag": "cs"
     }
 ]
