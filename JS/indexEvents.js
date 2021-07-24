@@ -107,6 +107,8 @@ function date(inputDate) {
     }
 
     tmp = date.getUTCDate + month + date.getUTCFullYear;
+
+    alert(tmp);
     return tmp;
 }
 
