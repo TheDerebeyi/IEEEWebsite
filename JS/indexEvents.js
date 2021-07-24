@@ -1,4 +1,4 @@
-var obj = fetch("../Datas/Activities/2021.json").then(response => response.json());
+var obj = fetch("./Datas/Activities/2021.json").then(response => response.json());
 
 alert(obj[0].id);
 
