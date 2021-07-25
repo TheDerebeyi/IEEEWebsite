@@ -4,7 +4,7 @@
         "title": "Mentör Buluşmaları",
         "description": "Bu etkinlik klüb üyelerimiz ile...",
         "image": "../assets/projects/r.jpg",
-        "date": "2020-11-17T03:24:00",
+        "date": "2021-08-25T03:24:00",
         "tag": "general"
     },
     {
@@ -13,6 +13,14 @@
         "description": "Bu etkinlik klüb üyelerimiz ile...",
         "image": "../assets/projects/r.jpg",
         "date": "2023-12-17T03:24:00",
+        "tag": "cs"
+    },
+    {
+        "id": "3",
+        "title": "Etkinlik 3",
+        "description": "Bu etkinlik klüb üyelerimiz ile...",
+        "image": "../assets/projects/r.jpg",
+        "date": "2024-11-17T03:24:00",
         "tag": "cs"
     }
 ]
