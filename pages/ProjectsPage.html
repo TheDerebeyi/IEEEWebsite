@@ -1,165 +1,181 @@
 <!doctype html>
 <html lang="tr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>IEEE SAÜ | Projeler</title>
-  
+  <!-- UIkit CSS -->
 
-    <link href="../css/projectsStyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+
+  <!-- Bootstrap CSS 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <title>IEEE SAÜ | Projeler</title>
+
+  <link href="../css/main.css" rel="stylesheet">
+
+  <link href="../css/projectsStyle.css" rel="stylesheet">
 </head>
-  <body class="bg-dark">
 
-    <!-- NavBar  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-          <a class="navbar-brand" href="../index.html">IEEE SAÜ</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Kominiteler
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="communityPage.html?community=cs">Computer Society</a></li>
-                  <li><a class="dropdown-item" href="communityPage.html?community=ras">robotic and automation society</a></li>
-                  <li><a class="dropdown-item" href="communityPage.html?community=wie">Women in engineering</a></li>
-                  <li><a class="dropdown-item" href="communityPage.html?community=pes">Power & Energy Society</a></li>
-                </ul>
-              </li>
+<body class="">
 
-              <li class="nav-item">
-                  <a href="ProjectsPage.html" class="nav-link">Projeler</a>
+  <!-- NavBar  -->
+  <nav class="navbar navbar-light navbar-expand-lg bg-white">
+    <div class="container ">
+      <a href="../index.html"><img src="../images/logo.png" style="height: 50px; padding-right: 50px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Komiteler
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="communityPage.html?community=cs">Computer Society</a></li>
+              <li><a class="dropdown-item" href="communityPage.html?community=ras">robotic and automation society</a>
               </li>
-              
-              <li class="nav-item">
-                  <a href="ActivityPage.html" class="nav-link">Aktiviteler</a>
-              </li>
-              
-              <li class="nav-item">
-                  <a href="contact.html " class="nav-link">İletişim</a>
-              </li>
-              
-              <li class="nav-item">
-                  <a href="galleryPage.html " class="nav-link">Galeri</a>
-              </li>
-
-
+              <li><a class="dropdown-item" href="communityPage.html?community=wie">Women in engineering</a></li>
+              <li><a class="dropdown-item" href="communityPage.html?community=pes">Power & Energy Society</a></li>
             </ul>
-          </div>
-        </div>
-    </nav>
+          </li>
+
+          <li class="nav-item">
+            <a href="ProjectsPage.html" class="nav-link">Projeler</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="ActivityPage.html" class="nav-link">Aktiviteler</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html " class="nav-link">İletişim</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="galleryPage.html " class="nav-link">Galeri</a>
+          </li>
 
 
-    <!-- Carousel -->
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Robotik kol</h1>
-                <p>Robotik kol projesi hakkında bir açıklama başlığı</p>
-                <p><a class="btn btn-lg btn-info" href="#" role="button">Projeye Git</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-    
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Robotik kol</h1>
-                <p>Robotik kol projesi hakkında bir açıklama başlığı</p>
-                <p><a class="btn btn-lg btn-info" href="#" role="button">Projeye Git</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div style="background-color: blue;" class="container">
-              <div class="carousel-caption text-end">
-                <h1>Robotik kol</h1>
-                <p>Robotik kol projesi hakkında bir açıklama başlığı</p>
-                <p><a class="btn btn-lg btn-info" href="#" role="button">Projeye Git</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
+        </ul>
+      </div>
     </div>
-      
-    <!-- Tüm projelerin listelendiği kısım-->
-    <div id="main" class="container pt-5">
-      
-    
-        
+  </nav>
 
-      <div class="row mb-5 justify-content-between">
-        <!-- Year -->
-        <div class="col-sm-4">
-          <select class="form-control form-control-lg">
-            <option>2021</option>
-            <option>2020</option>
-            <option>2019</option>
-          </select>
+
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class=" text-white">Robotik kol</h1>
+            <p>Robotik kol projesi hakkında bir açıklama başlığı</p>
+            <p><a class="btn btn-lg btn-info" href="#" role="button">Projeye Git</a></p>
+          </div>
         </div>
-        <!-- Community -->
-        <div class="col-sm-4">
-          <select class="form-control form-control-lg">
-            <option>HEPSİ</option>
-            <option>CS</option>
-            <option>PES</option>
-            <option>WIE</option>
-            <option>RAS</option>
-          </select>
+      </div>
+      <div class="carousel-item">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class=" text-white">Robotik kol</h1>
+            <p>Robotik kol projesi hakkında bir açıklama başlığı</p>
+            <p><a class="btn btn-lg btn-info" href="#" role="button">Projeye Git</a></p>
+          </div>
         </div>
-        
+      </div>
+      <div class="carousel-item">
+        <div style="background-color: blue;" class="container">
+          <div class="carousel-caption">
+            <h1 class=" text-white">Robotik kol</h1>
+            <p>Robotik kol projesi hakkında bir açıklama başlığı</p>
+            <p><a class="btn btn-lg btn-info" href="#" role="button">Projeye Git</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+  <!-- Tüm projelerin listelendiği kısım-->
+  <div id="main" class="container pt-5">
+
+
+
+
+    <div class="row mb-5">
+      <!-- Year -->
+      <div class="col-sm-4 margin-auto">
+        <select class="form-control form-control-lg custom-select">
+          <option>2021</option>
+          <option>2020</option>
+          <option>2019</option>
+        </select>
+      </div>
+      <!-- Community -->
+      <div class="col-sm-4 margin-auto">
+        <select class="form-control form-control-lg custom-select">
+          <option>HEPSİ</option>
+          <option>CS</option>
+          <option>PES</option>
+          <option>WIE</option>
+          <option>RAS</option>
+        </select>
       </div>
 
-      <div id="projectsRow" class="row">
-        
-      
-      </div>
+    </div>
+
+    <div id="projectsRow" class="row">
+
 
     </div>
-      
-    <footer class="bg-light text-center mt-5 p-4"  >
 
-        <h4>Coppyright @ IEEE SAÜ 2020</h4>
+  </div>
+  <footer class="text-center p-4  bg-ieee text-white">
 
-    </footer>
+    Copyright © IEEE SAU Student Branch 2021
+
+  </footer>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
 
 
-    <script src="../JS/projects.js"></script>
-  </body>
+  <script src="../JS/projects.js"></script>
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+</body>
+
 </html>

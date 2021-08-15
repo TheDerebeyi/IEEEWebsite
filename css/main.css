@@ -4,6 +4,14 @@
     --black: #000;
 }
 
+* {
+    box-sizing: border-box;
+  }
+
+nav li{
+    font-weight: bold;
+}
+
 .bg-ieee{
     background-color: var(--ieeeblue);
 }
@@ -34,6 +42,10 @@
 
 .margin-bottom75{
     margin-bottom: 75px;
+}
+
+.margin-auto{
+    margin: auto;
 }
 
 .padding-bottom10{
@@ -72,3 +84,34 @@
 table{
     border-radius: 4px;
 }
+
+
+.custom-select{
+    color: white;
+    background-color: #00629B;
+    text-align: center;
+    border: 0;
+  }
+  
+  .custom-select:focus{
+    color: white;
+    background-color: #00629B;
+    text-align: center;
+    border: 0;
+  }
+
+  
+.custom-select-white{
+    color: #00629B;
+    background-color: white;
+    text-align: center;
+    border: 0;
+  }
+
+  .custom-select-white:focus{
+    color: #00629B;
+    background-color: white;
+    text-align: center;
+    border: 0;
+  }
+  

@@ -43,9 +43,11 @@ function createActivity(data)
   
   var divContent = document.createElement("div");
   divContent.classList = "content";
+  divContent.style.backgroundColor = "#00629B";
   
   var title = document.createElement("h2");
   title.innerHTML = data.title;
+  title.style.color = "white";
   
   var discription = document.createElement("p");
   discription.innerHTML = data.discription;
@@ -59,11 +61,14 @@ function createActivity(data)
   
   var btn = document.createElement("a");
   btn.classList = "btn btn-info";
-  btn.innerHTML = "detay";
+  btn.innerHTML = "Detay";
+  btn.style.color = "#00629B";
+  btn.style.backgroundColor = "white";
 
   var date = document.createElement("small");
-  date.classList = "text-muted";
+  date.classList = "";
   date.innerHTML = data.date;
+  date.style.color = "white";
 
   console.log(data.date);
 
@@ -96,12 +101,14 @@ function createTimeLine(datas, year)
 {   
     var divider = document.createElement("div");
     divider.classList = "time-divider text-center";
+    divider.style.backgroundColor = "#00629B";
   
     var dividerText = document.createElement("span");
     dividerText.innerHTML = year;
+    dividerText.style.color = "white";
   
     var timeLine = document.createElement("div");
-    timeLine.classList = "timeline text-dark";
+    timeLine.classList = "timeline text-light";
 
     var i;
     for (i = 0; i < datas.length; i++) {
