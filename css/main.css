@@ -1,3 +1,29 @@
+:root{
+    --ieeeblue: #00629B;  /*rgb(0,98,155)*/
+    --white: #fff;
+    --black: #000;
+}
+
+.bg-ieee{
+    background-color: var(--ieeeblue);
+}
+
+.bg-white{
+    background-color: var(--white);
+}
+
+.text-black{
+    color: var(--black);
+}
+
+.text-white{
+    color: var(--white);
+}
+
+.text-ieee{
+    color: var(--ieeeblue);
+}
+
 .margin-bottom25{
     margin-bottom: 25px;
 }
@@ -41,4 +67,8 @@
 
 .text14{
     font-size: 14pt;
+}
+
+table{
+    border-radius: 4px;
 }

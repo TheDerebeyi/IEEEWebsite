@@ -6,9 +6,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- UIkit CSS -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+ <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <title>IEEE SAÜ | Ana Sayfa</title>
 
   <!-- FonstAwsome-->
@@ -17,15 +22,18 @@
   <!-- My Style -->
   <link href="css/index.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+
+
+
 </head>
 
-<body class="bg-dark">
+<body class="">
 
 
   <!-- NavBar  -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">IEEE SAÜ</a>
+  <nav class="navbar navbar-light navbar-expand-lg bg-white">
+    <div class="container ">
+      <a href="index.html"><img src="images/logo.png" style="height: 50px; padding-right: 50px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -72,30 +80,30 @@
   <header class="masthead bg-light text-white text-center">
     <div class="container d-flex align-items-center flex-column">
 
-      <h1 class="masthead-heading align-self-center text-uppercase mb-0 padding-bottom10 div-underline margin-bottom75">
+      <h1 class="masthead-heading align-self-center text-uppercase mb-0 padding-bottom10 div-underline margin-bottom75 text-white" uk-scrollspy="cls: uk-animation-slide-bottom;">
         IEEE SAÜ</h1>
       <div class="margin-bottom75"></div>
 
       <!--<hr class="solid my-5">-->
 
 
-      <p class="masthead-subheading mb-0 italic text18">"Innovation for Future..."</p><br><br>
+      <p class="masthead-subheading mb-0 italic text18" uk-scrollspy="cls: uk-animation-slide-bottom;">"Innovation for Future..."</p><br><br>
 
-      <a href="#about" class="btn btn-info mt-5">Bizi tanımak ister misin?</a>
+      <a href="#about" class="btn btn-info mt-5t" uk-scrollspy="cls: uk-animation-slide-bottom;">Bizi tanımak ister misin?</a>
 
       <!-- <a href="pages/SignInPage.html" class="btn btn-info mt-5">Kayıt ol</a> -->
     </div>
   </header>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class = " bg-ieee">
 
     <div class="container d-flex  align-items-center flex-column text-center text-light">
 
-      <h2 class="mt-5 padding-bottom10 div-underline margin-bottom75">Biz Kimiz?</h2>
+      <h2 class="mt-5 padding-bottom10 div-underline margin-bottom75 text-white" uk-scrollspy="cls: uk-animation-slide-bottom;">Biz Kimiz?</h2>
       <!--<hr class="solid my-5">-->
 
-      <p style="text-align: justify; ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, eaque? Nihil,
+      <p style="text-align: justify; " class=" animation" uk-scrollspy="cls: uk-animation-slide-bottom;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, eaque? Nihil,
         obcaecati explicabo harum
         perferendis fugit voluptatem reprehenderit suscipit at, officiis, doloremque officia rerum fugiat deleniti ullam
         necessitatibus dolore beatae porro ratione laborum illo. Dolorum unde minus illo minima accusantium voluptate
@@ -124,12 +132,12 @@
 
     <div class="container d-flex  align-items-center flex-column text-center text-light">
 
-      <h2 class="mt-5 padding-bottom10 div-underline margin-bottom75">Yaklaşan Etkinlikler</h2>
+      <h2 class="mt-5 padding-bottom10 div-underline margin-bottom75 text-ieee" uk-scrollspy="cls: uk-animation-slide-bottom; text-white">Yaklaşan Etkinlikler</h2>
       <!--<hr class="solid my-5">-->
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sd-12" style="height: 250px;padding: 25px;">
-            <table style="width: 100%; height: 100%;  background-color: white; color: black; visibility: hidden;" id="events-table1">
+            <table style="width: 100%; height: 100%; color: white; visibility: hidden;" id="events-table1" class="bg-ieee" uk-scrollspy="cls: uk-animation-slide-bottom;">
               <tr style="height: 20%; text-align: left; border-bottom: solid;">
                 <td style=" padding-left: 20px; width: fit-content;">Başlık </td>
                 <td>:</td>
@@ -146,7 +154,7 @@
             </table>
           </div>
           <div class="col-md-4 col-sd-12" style="height: 250px; padding: 25px">
-            <table style="width: 100%; height: 100%;  background-color: white; color: black; visibility: hidden;" id="events-table2">
+            <table style="width: 100%; height: 100%; color: white; visibility: hidden;" id="events-table2"  class="bg-ieee"  uk-scrollspy="cls: uk-animation-slide-bottom;">
               <tr style="height: 20%; text-align: left; border-bottom: solid;">
                 <td style=" padding-left: 20px; width: fit-content;">Başlık </td>
                 <td>:</td>
@@ -163,7 +171,7 @@
             </table>
           </div>
           <div class="col-md-4 col-sd-12" style="height: 250px; padding: 25px">
-            <table style="width: 100%; height: 100%;  background-color: white; color: black; visibility: hidden;" id="events-table3">
+            <table style="width: 100%; height: 100%; color: white; visibility: hidden;" id="events-table3"  class="bg-ieee"  uk-scrollspy="cls: uk-animation-slide-bottom;">
               <tr style="height: 20%; text-align: left; border-bottom: solid;">
                 <td style=" padding-left: 20px; width: fit-content;">Başlık </td>
                 <td>:</td>
@@ -189,13 +197,13 @@
   </section>
 
   <!-- Communities -->
-  <section>
+  <section class =  "bg-ieee">
 
     <div class="container text-center text-light pt-5">
 
       <div class="d-flex mb-5 align-items-center flex-column text-center text-light">
 
-        <h2 class="mb-2 padding-bottom10 div-underline margin-bottom75">Komitelerimiz</h2>
+        <h2 class="mb-2 padding-bottom10 div-underline margin-bottom75 text-white" uk-scrollspy="cls: uk-animation-slide-bottom;">Komitelerimiz</h2>
 
         <!--<hr class="solid my-5">-->
 
@@ -204,7 +212,7 @@
       <!-- Community  -->
       <div class="accordion text-dark" id="communities">
 
-        <div class="row justify-content-between">
+        <div class="row justify-content-between" uk-scrollspy="cls: uk-animation-slide-bottom;">
           <!-- CS -->
           <div class="col-lg-3 mt-2 margin-bottom25">
             <div class="card">
@@ -265,7 +273,7 @@
           </div>
         </div>
 
-        <div class="row justify-content-between">
+        <div class="row justify-content-between" uk-scrollspy="cls: uk-animation-slide-bottom;">
 
           <!-- Power and Energy -->
           <div class="col-lg-3 mt-2 margin-bottom25">
@@ -342,13 +350,13 @@
 
       <div class="d-flex my-5 align-items-center flex-column text-center text-light">
 
-        <h2 class="mb-2 text-light padding-bottom10 div-underline margin-bottom75">Sosyal Medya Hesaplarımız</h2>
+        <h2 class="mb-2 padding-bottom10 div-underline margin-bottom75 text-ieee" uk-scrollspy="cls: uk-animation-slide-bottom;">Sosyal Medya Hesaplarımız</h2>
 
         <!--<hr class="solid my-5">-->
 
       </div>
 
-      <div class="row justify-content-around mt-5">
+      <div class="row justify-content-around mt-5" uk-scrollspy="cls: uk-animation-slide-bottom;">
 
         <div class="col-lg-3 col-md-6 social-card mt-2">
 
@@ -406,9 +414,9 @@
 
 
 
-  <footer class="bg-light text-center mt-5 p-4">
+  <footer class="text-center mt-5 p-4  bg-ieee text-white">
 
-    <h4>Copyright @ IEEE SAÜ 2021</h4>
+    Copyright © IEEE SAU Student Branch 2021
 
   </footer>
 
@@ -439,6 +447,10 @@
     -->
 
     <script src="./JS/indexEvents.js"></script>
+
+    <!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>
