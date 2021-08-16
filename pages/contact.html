@@ -6,6 +6,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- UIkit CSS -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+
   <!-- Bootstrap CSS 
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
   <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -59,10 +63,6 @@
             <a href="contact.html " class="nav-link">İletişim</a>
           </li>
 
-          <li class="nav-item">
-            <a href="galleryPage.html " class="nav-link">Galeri</a>
-          </li>
-
 
         </ul>
       </div>
@@ -73,7 +73,7 @@
     <div class="container">
 
       <div class="section-title  text-center text-white" style="padding-top:3rem;">
-        <h1>İletişim</h1>
+        <h1 class="text-white">İletişim</h1>
         <p>
           Tavsiyelerinizi önerilerinizi ve isteklerinizi aşağıdaki formu doldurarak veya verilen mail adreslerine mail
           atarak sağlıyabilrsiniz
@@ -94,14 +94,14 @@
         </div>
 
         <div class="col-sm-4" id="contact2">
-          <h3>Sakarya Üniversitesi IEEE</h3>
+          <h3 class="text-white">Sakarya Üniversitesi IEEE</h3>
           <hr width="50%">
 
-          <h5>Sorularınız için</h5>
+          <h5 class="text-white">Sorularınız için</h5>
           <i class="fas fa-envelope"></i>ieeesau@ieee.com <br>
           <hr width="50%">
 
-          <h5>Teknik Sorunlar için</h5>
+          <h5 class="text-white">Teknik Sorunlar için</h5>
           <i class="fas fa-envelope"></i>omer.halil.dmrts@gmail.com<br>
 
         </div>
@@ -112,7 +112,7 @@
   <section style="padding-top: 2rem; padding-bottom: 2rem;">
     <div class="container">
       <div id="form" class="row justify-content-center">
-        <h2 class="mb-5 text-center">İstek / Şikayet</h2>
+        <h2 class="mb-5 text-center text-ieee">İstek / Şikayet</h2>
 
         <div class="col-lg-8  mt-lg-0">
 
@@ -131,7 +131,7 @@
 
               <div class="col-12">
 
-                <input class="form-control mt-3" type="text" placeholder="Konu: *">
+                <input class="form-control mt-3" type="text" placeholder="Konu:">
 
                 <textarea class="form-control mt-3" name="message" rows="5" data-rule="required"
                   data-msg="Please write something for us" placeholder="Message"></textarea>
