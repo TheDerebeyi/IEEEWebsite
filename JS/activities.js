@@ -123,7 +123,7 @@ function createTimeLine(datas, year)
 
 function main()
 {
-
+  alert("Hallo?");
     console.log("main");
 
     getData("2021");
