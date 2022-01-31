@@ -1,6 +1,9 @@
 {
     "name": "Computer Society",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad unde quis quidem quasi nisi minus veniam, eius officiis earum provident exercitationem atque neque s",
-    "mission": "Mission",
-    "goal": "Mission"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quod totam quia enim. Laborum non dolorem consequatur quidem ex ipsam et repellat, eligendi debitis est dolor ullam? Voluptatem, officia error fuga unde, libero, assumenda quaerat harum est maxime hic esse asperiores mollitia. Sed labore consectetur perspiciatis, asperiores ad natus molestiae dolor est, inventore doloribus neque quam cupiditate architecto sit dolores obcaecati eos mollitia nobis voluptatibus iusto veritatis minima. Placeat, iusto voluptate ratione dolores id vero sit voluptatibus possimus, ipsum laudantium illo distinctio molestiae iste reiciendis quia facilis nostrum natus nam eos rerum. Obcaecati, ea nobis natus nesciunt consectetur quia minus expedita aliquam enim placeat debitis amet, ratione odio ipsam dolor eaque excepturi accusamus repellat ipsa unde suscipit consequatur quod deleniti illum. Dolor, corrupti possimus mollitia, consectetur magnam vel repellat facilis perspiciatis, esse at eum. Ea, obcaecati. Neque cum facere qui eius quae eveniet. Accusamus rem a veritatis reiciendis dolor aliquid ipsam est unde. Eligendi rerum alias consequuntur natus, qui laboriosam laborum vitae tempora voluptate sit numquam facere, ad perspiciatis quo atque impedit aperiam itaque, commodi ex. Omnis officiis recusandae culpa cumque qui blanditiis ullam ducimus dolores et cum facere mollitia nemo, inventore natus, possimus sint quibusdam animi vitae. Veniam laborum obcaecati ipsa nisi adipisci a illo, distinctio hic inventore provident enim delectus totam quia quos quibusdam nesciunt velit? Voluptate aliquam cupiditate alias eaque assumenda ut corrupti, maiores necessitatibus, distinctio adipisci ad repudiandae error quo quasi repellat laboriosam laudantium. Eaque neque libero aliquam aperiam recusandae velit accusantium laborum quis voluptate consequuntur!",
+    "chairPhoto": "images/photos/dorukan.jpeg",
+    "chairName": "Dorukan Uysal",
+    "vicechairName": "L. Mert Kahraman",
+    "vicechairPhoto": "images/photos/mert.jpeg",
+    "logo": "images/icons/linkedin.png"
 }

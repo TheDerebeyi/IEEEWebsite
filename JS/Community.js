@@ -3,8 +3,11 @@ const urlParams = new URLSearchParams(queryString);
 
 const title = document.querySelector("#community-name"); 
 const description = document.querySelector("#description");
-const mission = document.querySelector("#mission") 
-const goal = document.querySelector("#goal") 
+const chairPhoto = document.querySelector("#cPhoto");
+const chairName = document.querySelector("#cName");
+const vicechairPhoto = document.querySelector("#vcPhoto") ;
+const vicechairName = document.querySelector("#vcName");
+const logo = document.querySelector("#logo");
 
 function editPage(data){
 
@@ -12,14 +15,20 @@ function editPage(data){
 
     description.innerHTML = data.description;
     
-    mission.innerHTML = data.mission;   
+    chairPhoto.src = data.chairPhoto;   
 
-    goal.innerHTML = data.goal;
+    chairName.innerHTML = data.chairName;
 
-    getData("Datas/Activities/2021.json", editTable);
+    vicechairName.innerHTML = data.vicechairName;
+
+    vicechairPhoto.src = data.vicechairPhoto;
+
+    logo.src = data.logo;
+
+   /* getData("Datas/Activities/2021.json", editTable);*/
 }
 
-function editTable(data){
+/*function editTable(data){
     var arr = [];
 
     var counter = 0;
@@ -129,7 +138,7 @@ function editTable(data){
         document.getElementById("events-table" + i + "-desc").innerHTML = data[arr[i - 1]].description;
     }
 }
-
+*/
 function getData(url, callback){
 
     fetch(url)
@@ -143,7 +152,7 @@ function main(){
 
     var url = "Datas/community/" + urlParams.get("community") + ".json";
 
-    document.title = "IEEE SAÜ |  " + urlParams.get("community");
+    document.title = "IEEE SAÜ |  " + urlParams.get("community").toUpperCase();
 
     console.log(url);
 
