@@ -19,9 +19,15 @@ function editPage(data){
 
     chairName.innerHTML = data.chairName;
 
-    vicechairName.innerHTML = data.vicechairName;
+    if(data.vicechairName === ""){
+        e = document.getElementById("vc");
+        e.parentElement.removeChild(e);
+    }else{
+
+        vicechairName.innerHTML = data.vicechairName;
 
     vicechairPhoto.src = data.vicechairPhoto;
+    }
 
     logo.src = data.logo;
 
