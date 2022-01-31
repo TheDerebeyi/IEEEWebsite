@@ -8,6 +8,7 @@
     box-sizing: border-box;
   }
 
+
 nav li{
     font-weight: bold;
 }
@@ -137,3 +138,24 @@ table{
     border: 0;
   }
   
+  .management{
+    padding: 25px 100px;
+  }
+
+  .management-photo{
+    width: 200px; height: 200px; overflow: hidden; border-radius: 50%;
+    margin: 0 auto 25px auto;
+  }
+
+  .management-name{
+    color: var(--ieeeblue);
+  }
+
+  .management-title{
+
+  }
+
+  .inline-block
+{
+    display: inline-block;
+}

@@ -1,11 +1,11 @@
-var values = [100,50,10];
+var values = [400,7,8];
 var counter = 1;
 
 function animatedNumbers(val) {
     let object = document.getElementById(val);
     let range = values[counter-1];
     let i = 0;
-    let myVar = setInterval(() => { if (i >= range) { clearInterval(myVar); counter++; if(counter < 4){animatedNumbers("num" + counter);}} object.innerHTML = i; i++; }, 15);
+    let myVar = setInterval(() => { if (i >= range) { clearInterval(myVar); counter++; if(counter < 4){animatedNumbers("num" + counter);}} object.innerHTML = i; i++; }, 10);
 }
 
 /*function animatedNumbers2(val2) {

@@ -1,30 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEEE SAÜ | Aktiviteler</title>
 
   <!-- UIkit CSS -->
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
 
-  <!-- Bootstrap CSS -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
+  <!-- Bootstrap CSS 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <title>IEEE SAÜ | Ana Sayfa</title>
 
-  <!-- FonstAwsome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- My Style -->
-  <link href="css/index.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-
-
-
+  <link href="css/ActivityStyle.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -80,19 +72,41 @@
 </nav>
 
 
-   <section style="min-height: 20rem;" class="text-light text-center">
+  <!-- TimeLine  -->
+
+  <div class="time-line " style="min-height: 45rem;">
+    <section class=" bg-ieee">
+      <div class="container">
+        <!-- Options -->
+        <div class="row justify-content-between"
+          style="padding-top: 3rem; padding-left: 7rem; padding-right: 7rem; margin-left: 0; margin-right: 0;">
+          <!-- Year -->
+          <div class="col-lg-2 col-sm-4 mt-2">
+            <select class="form-control form-control-lg custom-select-white">
+              <option>2021</option>
+              <option>2020</option>
+              <option>2019</option>
+            </select>
+          </div>
+          <!-- Community -->
+          <div class="col-lg-2 col-sm-4 mt-2">
+            <select class="form-control form-control-lg custom-select-white">
+              <option>HEPSİ</option>
+              <option>CS</option>
+              <option>PES</option>
+              <option>WIE</option>
+              <option>RAS</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
 
-        <h1 style="margin-top: 5rem; font-size: 10rem;">404</h1>
-        <h1 style="font-size: 3rem;">Sanırım kayboldun</h1>
+  </div>
 
-        <a class="btn btn-info my-5" href="index.html">Ana Sayfa</a>
-   </section>
-
-
-     
-
-   <footer class="bg-ieee padding10" style="height: fit-content;">
+  <footer class="bg-ieee padding10" style="height: fit-content;">
     <div class="margin-auto" style="width:fit-content; margin-top: 38px; margin-bottom: 38px;">
       <div style="height: 52px; width: fit-content;" class="margin-auto">
         <div name="youtube" style="width: 52px; height: 52px; float:left">
@@ -118,14 +132,6 @@
           </div>
         </div>
       </div>
-      <!--<div class="text-white margin10">
-        <ul style="padding:0; width: fit-content;" class="margin-auto">
-          <li style="display: inline-block;"><small>Home</small></li>
-          <li style="display: inline-block;"><small>Projeler</small></li>
-          <li style="display: inline-block;"><small>Aktiviteler</small></li>
-          <li style="display: inline-block;"><small>İletişim</small></li>
-        </ul>
-      </div>-->
       <div class="text-white margin10">
         <small>Copyright © IEEE SAU Student Branch 2021</small>
       </div>
@@ -134,33 +140,11 @@
   </footer>
 
 
-  <!-- Optional JavaScript; choose one of the two! -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
 
-  <!-- for Collapse -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-
-  <!--
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
-
-  <script src="./JS/indexEvents.js"></script>
-  <script src="./JS/animatedNumbers.js"></script>
+  <script src="JS/activities.js"></script>
 
   <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>

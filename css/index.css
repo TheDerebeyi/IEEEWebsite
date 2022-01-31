@@ -72,3 +72,9 @@ hr.solid {
   a{
     text-decoration: none;
 }
+
+.partners{
+  display:inline-block;
+  width: 200px;
+  margin: 0 25px 0 25px
+}

@@ -29,8 +29,8 @@ function getVideoPicture(url)
 function createYoutubeVideo(video){
     /*
     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-        <a data-lightbox="mygallery" href="../assets/projects/forest.jpg" class="fancybox">
-            <img  src="../assets/projects/forest.jpg" class="zoom img-fluid "  alt="">
+        <a data-lightbox="mygallery" href="assets/projects/forest.jpg" class="fancybox">
+            <img  src="assets/projects/forest.jpg" class="zoom img-fluid "  alt="">
         </a>
     </div>
     */

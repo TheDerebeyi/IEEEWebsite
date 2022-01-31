@@ -16,7 +16,7 @@ function editPage(data){
 
     goal.innerHTML = data.goal;
 
-    getData("../Datas/Activities/2021.json", editTable);
+    getData("Datas/Activities/2021.json", editTable);
 }
 
 function editTable(data){
@@ -141,7 +141,7 @@ function getData(url, callback){
 
 function main(){    
 
-    var url = "../Datas/community/" + urlParams.get("community") + ".json";
+    var url = "Datas/community/" + urlParams.get("community") + ".json";
 
     document.title = "IEEE SAÜ |  " + urlParams.get("community");
 
