@@ -4,6 +4,14 @@
     --black: #000;
 }
 
+nav a.golden{
+    color: gold !important;
+}
+
+nav a.golden:hover{
+    color: #ffd755 !important;
+}
+
 * {
     box-sizing: border-box;
   }

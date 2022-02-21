@@ -1,0 +1,23 @@
+.blog_post{
+    padding: 2rem 0; width: 100%; height: fit-content;
+}
+
+.blog_baslik{
+    font-weight: bold;
+    font-size: 5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog_text{
+
+}
+
+.blog_images{
+
+}
+
+.image-vertical{
+    display: inline-block;
+}
