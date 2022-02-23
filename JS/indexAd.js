@@ -33,7 +33,7 @@ function ad(link){
     ad.style.opacity = "1";
     ad.style.height = "65vh";
     const linkInner = document.createElement("a");
-    linkInner.href = "https://www.instagram.com/p/CaNE7woM5XT/";
+    linkInner.href = "https://www.instagram.com/p/CaUTl3ysq7v/";
     obj.appendChild(div);
     div.appendChild(close);
     div.appendChild(linkInner);
@@ -41,4 +41,4 @@ function ad(link){
 }
 
 
-ad("./images/2022/otomasyon-zirvesi.jpeg");
+ad("./images/2022/enerji zirvesi.jpeg");
