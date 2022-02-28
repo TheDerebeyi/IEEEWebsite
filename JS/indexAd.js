@@ -1,4 +1,4 @@
-function ad(link){
+function ad(link, linkPage){
     //const body = document.getElementsByTagName("body");
     const obj = document.getElementById("ad");
     document.getElementsByTagName("body")[0].style.overflowY = "hidden";
@@ -33,7 +33,7 @@ function ad(link){
     ad.style.opacity = "1";
     ad.style.height = "65vh";
     const linkInner = document.createElement("a");
-    linkInner.href = "https://www.instagram.com/p/CaUTl3ysq7v/";
+    linkInner.href = linkPage;
     obj.appendChild(div);
     div.appendChild(close);
     div.appendChild(linkInner);
@@ -41,4 +41,4 @@ function ad(link){
 }
 
 
-ad("./images/2022/cs day.jpeg");
+ad("./images/2022/cs day.jpeg", "https://www.instagram.com/p/CafRVl_srQI/");
