@@ -41,4 +41,4 @@ function ad(link){
 }
 
 
-ad("./images/2022/enerji zirvesi.jpeg");
+ad("./images/2022/cs day.jpeg");
