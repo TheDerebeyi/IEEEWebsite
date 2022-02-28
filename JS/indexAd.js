@@ -34,6 +34,7 @@ function ad(link, linkPage){
     ad.style.height = "65vh";
     const linkInner = document.createElement("a");
     linkInner.href = linkPage;
+    linkInner.target = "_blank";
     obj.appendChild(div);
     div.appendChild(close);
     div.appendChild(linkInner);
