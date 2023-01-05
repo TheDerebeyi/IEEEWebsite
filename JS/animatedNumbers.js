@@ -1,4 +1,4 @@
-var values = [7,8,500];
+var values = [7,9,500];
 var counter = 1;
 
 function animatedNumbers() {
